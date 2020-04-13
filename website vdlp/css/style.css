@@ -882,7 +882,7 @@ h1, h2, h3, h4, h5, h6 {
       z-index: 99; 
       border: none; 
       outline: none; 
-      background-color: rgb(76, 0, 255); 
+      background-color: #1da1f2; 
       color: white; 
       cursor: pointer; 
       padding: 15px; 
@@ -891,5 +891,5 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     #myBtn:hover {
-      background-color: rgb(85, 85, 85); 
+      background-color: #1da0f271; 
     }
