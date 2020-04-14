@@ -234,10 +234,9 @@ h1, h2, h3, h4, h5, h6 {
 .site-navbar {
   margin-bottom: 0px;
   width: 100%;
-  padding: 15px 0; }
+  padding:05px 0; }
   .site-navbar .site-logo {
     font-weight: 200;
-    line-height: 0;
     position: relative; }
     .site-navbar .site-logo a {
       font-weight: 200;
