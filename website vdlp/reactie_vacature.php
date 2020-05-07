@@ -1,18 +1,18 @@
 <?php
-
 $host = "localhost";
 $databaseName = "vdlp";
 $connectionString = "mysql:host=$host;dbname=$databaseName";
 $username = "student";    
 $password = "student";     
 
-//selecteerd welke cadeau's te laten zien
+$id = $_POST["id"];
+
 $conn = null;
 try
 {
     $conn = new PDO($connectionString, $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "SELECT naam, beschrijving, opleiding, id FROM vacature";
+    $sql = "SELECT naam, beschrijving, opleiding, id FROM vacature WHERE id = $id";
     $stmtSelect = $conn->prepare($sql);
     $stmtSelect->execute();
     $result = $stmtSelect->setFetchMode();
@@ -99,39 +99,50 @@ try
     </div> 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
 
-  
-   
-
-    <div class="site-section">
-        <div class="container">
-          <div class="row mb-5 ">
-            <div class="col-md-12 section-title text-center mx-auto">
-                
-            <?$count = 0; 
+    <div class="site-section" id="Contact">
+      <div class="container">
+        <form action="vacature_sturen.php" method="post" class="contact-form">
+        <?$count = 0; 
             foreach ($rows as $row) { ?>
 
-      <div class="title text-primary mb-3"> <?= $row["naam"]?>  </div>
-           
-      <?=  $beschrijving2 = wordwrap($row["beschrijving"], 20, "\n");
-      ?>
-      <br>
-      <br>
-      <br>
-      <span class="sub-title mb-2 d-block">Opleiding: <?= $row["opleiding"]?> </span>  <br> 
-      <form method="post" action="reactie_vacature.php">
-                <input type="hidden" name="id" value="<?= $row["id"] ?>">
-                <button type="submit">Reageer op deze vacature</button>
-            </form><br>  <img class="img-fluid" src="images/dummy.png">
-      <br><br><br><br><br>
-<? } ?>
-<div class="title bold mb-3">
- <? echo "Dit zijn alle vacatures";?>
+          <div class="section-title text-center mb-5">
+            <span class="sub-title mb-2 d-block">Bij ons werken?</span>
+            <h2 class="title text-primary">je reageert op de vacature: <?= $row["naam"]?></h2>
+          </div>
+         
+          <input type="hidden" name="functie" value="<?= $row["naam"] ?>">
+          <div class="row mb-4">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <input name="naam" type="text" class="form-control" placeholder="Voornaam">
             </div>
+            <div class="col-md-6">
+              <input name="anaam" type="text" class="form-control" placeholder="Achternaam">
             </div>
           </div>
-        </div>
-        </div>
-          
+
+          <div class="row mb-4">
+            <div class="col-12">
+              <input name="email" type="email" class="form-control" placeholder="Email/tel.nr.">
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12">
+              <textarea name="bericht" class="form-control" name="" id="" cols="30" rows="10" placeholder="Bericht"></textarea>
+            </div>
+          </div>
+<input type="file"  name="cv" id="cv">
+
+          <div class="row">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary btn-md">Stuur bericht</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div> <!-- END .site-section -->
+            <?php } ?>
 
     <footer class="site-footer">
         <div class="container">
