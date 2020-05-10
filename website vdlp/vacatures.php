@@ -1,5 +1,10 @@
 <?php
-
+session_start();
+if (empty($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+ 
+} 
 $host = "localhost";
 $databaseName = "vdlp";
 $connectionString = "mysql:host=$host;dbname=$databaseName";
