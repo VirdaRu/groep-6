@@ -19,6 +19,9 @@ if(isset($_POST["logout"])) {
 <form action="admingegevens-vacature.php">
     <input type="submit" value="Ga naar vacatures" />
 </form>
+<form action="admingegevens-contact.php">
+    <input type="submit" value="Ga naar contact reacties" />
+</form>
 <form method="post">
     <button name="logout" type="submit">Logout</button>
 </form>

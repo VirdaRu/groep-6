@@ -10,7 +10,9 @@ $errors = [];
 $naam = "";
 $ww = "";
 
-
+if(isset($_SESSION["user_id"])) {
+    unset($_SESSION["user_id"]);
+}
 if(!empty($_POST["naam"])) {
     $naam = filter_var($_POST["naam"],FILTER_SANITIZE_STRING);
     if($naam === false) {

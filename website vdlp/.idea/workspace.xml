@@ -37,19 +37,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Bruid: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Bruid: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="kado: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="vdlp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
       <path>
@@ -64,6 +51,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="vdlp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="contact: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="vdlp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="vacature: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
@@ -72,13 +66,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="vdlp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="vacature_reactie: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="vdlp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="watwijdoen: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -107,32 +94,27 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@390764c7" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2834d840" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@49679a70" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4dd75993" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2fc813d0" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@29b6c5d2" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@4026d69e" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@44adebe" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@3f37fcf9" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@53693c37" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2fdb1ec7" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -153,7 +135,9 @@
       <updated>1588611247787</updated>
       <workItem from="1588611251786" duration="7246000" />
       <workItem from="1588767482558" duration="11723000" />
-      <workItem from="1589016818502" duration="3779000" />
+      <workItem from="1589016818502" duration="3996000" />
+      <workItem from="1589145854496" duration="533000" />
+      <workItem from="1589146415000" duration="2753000" />
     </task>
     <servers />
   </component>
@@ -161,45 +145,49 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="189" width="804" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588611296057">
+    <state x="555" y="189" width="804" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589146886349">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="555" y="189" width="804" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1588611296057" />
-    <state width="1294" height="281" key="GridCell.Tab.0.bottom" timestamp="1589145136399">
+    <state x="555" y="189" width="804" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1589146886349" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1589146619698">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1054@0.0.1920.1054" timestamp="1589145136399" />
-    <state width="1294" height="281" key="GridCell.Tab.0.center" timestamp="1589145136399">
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1054@0.0.1920.1054" timestamp="1589146619698" />
+    <state width="1294" height="281" key="GridCell.Tab.0.bottom" timestamp="1589148533536">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.center/0.0.1920.1054@0.0.1920.1054" timestamp="1589145136399" />
-    <state width="1294" height="281" key="GridCell.Tab.0.left" timestamp="1589145136399">
+    <state width="1294" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1054@0.0.1920.1054" timestamp="1589148533536" />
+    <state width="1294" height="281" key="GridCell.Tab.0.center" timestamp="1589148533533">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.left/0.0.1920.1054@0.0.1920.1054" timestamp="1589145136399" />
-    <state width="1294" height="281" key="GridCell.Tab.0.right" timestamp="1589145136399">
+    <state width="1294" height="281" key="GridCell.Tab.0.center/0.0.1920.1054@0.0.1920.1054" timestamp="1589148533533" />
+    <state width="1294" height="281" key="GridCell.Tab.0.left" timestamp="1589148533532">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state width="1294" height="281" key="GridCell.Tab.0.right/0.0.1920.1054@0.0.1920.1054" timestamp="1589145136399" />
-    <state x="862" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1588875983556">
+    <state width="1294" height="281" key="GridCell.Tab.0.left/0.0.1920.1054@0.0.1920.1054" timestamp="1589148533532" />
+    <state width="1294" height="281" key="GridCell.Tab.0.right" timestamp="1589148533535">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="862" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1054@0.0.1920.1054" timestamp="1588875983556" />
+    <state width="1294" height="281" key="GridCell.Tab.0.right/0.0.1920.1054@0.0.1920.1054" timestamp="1589148533535" />
+    <state x="862" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1589146914838">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="862" y="425" width="363" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1054@0.0.1920.1054" timestamp="1589146914838" />
     <state x="721" y="356" width="471" height="336" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1588875988393">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="721" y="356" width="471" height="336" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1588875988393" />
-    <state x="739" y="241" width="556" height="712" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1589143088810">
+    <state x="739" y="241" width="556" height="712" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1589148335801">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="739" y="241" width="556" height="712" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1589143088810" />
+    <state x="739" y="241" width="556" height="712" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1589148335801" />
     <state x="813" y="293" width="287" height="465" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1588611324302">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="813" y="293" width="287" height="465" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1588611324302" />
-    <state x="626" y="355" key="com.intellij.ide.util.TipDialog" timestamp="1589016828874">
+    <state x="626" y="355" key="com.intellij.ide.util.TipDialog" timestamp="1589146414435">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
-    <state x="626" y="355" key="com.intellij.ide.util.TipDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1589016828874" />
+    <state x="626" y="355" key="com.intellij.ide.util.TipDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1589146414435" />
   </component>
 </project>

@@ -603,43 +603,48 @@
     
     <div class="site-section" id="Contact">
       <div class="container">
-        <form action="" class="contact-form">
-
-          <div class="section-title text-center mb-5">
-            <span class="sub-title mb-2 d-block">Want to discuss?</span>
-            <h2 class="title text-primary">Contact us</h2>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <input name="Name" type="text" class="form-control" placeholder="Name">
-            </div>
-            <div class="col-md-6">
-              <input name="Company" type="text" class="form-control" placeholder="Company">
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-12">
-              <input name="email" type="email" class="form-control" placeholder="Email/tel.nr.">
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-12">
-              <textarea name="Message" class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary btn-md">Send message</button>
-            </div>
-          </div>
-
-        </form>
+        <div class="site-section" id="Contact">
+          <div class="container">
+            <form action="contact-sturen.php" method="post" class="contact-form">
+             
+      
+                <div class="section-title text-center mb-5">
+                  <span class="sub-title mb-2 d-block">Want to discuss?</span>
+                  <h2 class="title text-primary">Contact</h2>
+                </div>
+                <input type="hidden" name="ACTION" value="AddTodo">
+                <div class="row mb-4">
+                  <div class="col-md-6 mb-4 mb-md-0">
+                    <input name="naam" required type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="col-md-6">
+                    <input name="anaam" required type="text" class="form-control" placeholder="company">
+                  </div>
+                </div>
+      
+                <div class="row mb-4">
+                  <div class="col-12">
+                    <input name="email" required type="text" class="form-control" placeholder="Email/phone nr.">
+                  </div>
+                </div>
+      
+                <div class="row mb-4">
+                  <div class="col-12">
+                    <textarea name="bericht" required class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                  </div>
+                </div>
+    
+      
+                <div class="row">
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-md">Send message</button>
+                  </div>
+                </div>
+      
+              </form>
       </div>
     </div> <!-- END .site-section -->
+    </div> 
   
     <footer class="site-footer">
       <div class="container">

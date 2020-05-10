@@ -110,7 +110,7 @@ try
             <span class="sub-title mb-2 d-block">Bij ons werken?</span>
             <h2 class="title text-primary">je reageert op de vacature: <?= $row["naam"]?></h2>
           </div>
-         
+          <input type="hidden" name="ACTION" value="AddTodo">
           <input type="hidden" name="functie" value="<?= $row["naam"] ?>">
           <div class="row mb-4">
             <div class="col-md-6 mb-4 mb-md-0">

@@ -603,41 +603,43 @@
     
     <div class="site-section" id="Contact">
       <div class="container">
-        <form action="" class="contact-form">
-
-          <div class="section-title text-center mb-5">
-            <span class="sub-title mb-2 d-block">Even sparren?</span>
-            <h2 class="title text-primary">Contacteer ons</h2>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <input name="naam" type="text" class="form-control" placeholder="Naam">
+        <form action="contact-sturen.php" method="post" class="contact-form">
+         
+  
+            <div class="section-title text-center mb-5">
+              <span class="sub-title mb-2 d-block">even sparren?</span>
+              <h2 class="title text-primary">Contact</h2>
             </div>
-            <div class="col-md-6">
-              <input name="bedrijf" type="text" class="form-control" placeholder="Bedrijf">
+            <input type="hidden" name="ACTION" value="AddTodo">
+            <div class="row mb-4">
+              <div class="col-md-6 mb-4 mb-md-0">
+                <input name="naam" required type="text" class="form-control" placeholder="Naam">
+              </div>
+              <div class="col-md-6">
+                <input name="anaam" required type="text" class="form-control" placeholder="Bedrijf">
+              </div>
             </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-12">
-              <input name="email" type="email" class="form-control" placeholder="Email/tel.nr.">
+  
+            <div class="row mb-4">
+              <div class="col-12">
+                <input name="email" required type="text" class="form-control" placeholder="Email/tel.nr.">
+              </div>
             </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-12">
-              <textarea name="bericht" class="form-control" name="" id="" cols="30" rows="10" placeholder="Bericht"></textarea>
+  
+            <div class="row mb-4">
+              <div class="col-12">
+                <textarea name="bericht" required class="form-control" name="" id="" cols="30" rows="10" placeholder="Bericht"></textarea>
+              </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary btn-md">Stuur bericht</button>
+  
+            <div class="row">
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-md">Stuur bericht</button>
+              </div>
             </div>
-          </div>
-
-        </form>
+  
+          </form>
       </div>
     </div> <!-- END .site-section -->
   

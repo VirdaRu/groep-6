@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "vdlp",
+            "dialect": "MariaDB",
+            "name": "localhost",
+            "password": "student",
+            "port": 3306,
+            "server": "localhost",
+            "username": "student"
+        }
+    ]
+}
