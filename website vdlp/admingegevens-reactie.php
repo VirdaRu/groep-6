@@ -42,7 +42,7 @@ try
         <div class="container">
           <div class="row mb-5 ">
             <div class="col-md-12 section-title text-center mx-auto">
-                
+            <div>-------------------------------------------------------------------------------------------------</div>
             <?$count = 0; 
             foreach ($rows as $row) { ?>
 

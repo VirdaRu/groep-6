@@ -1,12 +1,11 @@
 <?php
-session_start();
-if (empty($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit;
- 
-} 
 
-include "datagegevens.php";
+
+$host = "localhost";
+$databaseName = "vdlp";
+$connectionString = "mysql:host=$host;dbname=$databaseName";
+$username = "student";    
+$password = "student";  
 
 if(isset($_POST['naam'])){
     $naam = $_POST['naam'];}
@@ -40,7 +39,7 @@ if(isset($_POST['naam'])){
             echo "<script>alert('Vacature Gestuurd');window.location.href = 'vacatures.php';</script>";
         } 
     } catch (PDOException $ex) {
-        echo "<script>alert('Vacature sturen mislukt');window.location.href = 'vacatures.php';</script>";
+        echo "<script>alert('Vacature sturen mislukt');</script>";
       
     } finally {
         if($conn != null) {

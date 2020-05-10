@@ -1,10 +1,5 @@
 <?php
-session_start();
-if (empty($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit;
- 
-} 
+
 $host = "localhost";
 $databaseName = "vdlp";
 $connectionString = "mysql:host=$host;dbname=$databaseName";
@@ -128,7 +123,7 @@ try
 
           <div class="row mb-4">
             <div class="col-12">
-              <input name="email" type="email" class="form-control" placeholder="Email/tel.nr.">
+              <input name="email" type="text" class="form-control" placeholder="Email/tel.nr.">
             </div>
           </div>
 
